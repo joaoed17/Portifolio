@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/Segoe\ UI.woff') format('woff');
+    }
+    
+@font-face {
+    font-family: 'Impact Regular';
+    src: url('../fonts/Impact.woff') format('woff');
+}
+html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #121528;
+    margin: 0;
+}
+
+    /*Cabeçalho*/
+
+header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /*Logo*/
+
+#logo {
+    position: relative;
+    height: 70px;
+    margin-left: 50px;
+}
+
+    /*Nav bar*/
+
+nav {
+    position: relative;
+    margin-right: 100px;
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar li {
+    padding-right: 23px;
+}
+
+#navbar li a {
+    font-family: 'Segoe UI Regular';
+    font-size: 20pt;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#navbar li a:hover {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+    /*Background*/
+
+#inicio {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../media/background.jpg);
+    background-repeat: no-repeat;
+}
+
+    /*Div 1*/
+
+#intro {
+    width: 1240px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro h1 {
+    margin: -30px 0px 25px 55px;
+    padding-top: 0px;
+    font-size: 65pt;
+    color: #feb400;
+    text-shadow: -5px 5px 5px #000000;
+    font-family: 'Impact Regular';
+    letter-spacing: 10px;
+}
+#intro h2 {
+    margin: 80px 0px 0px 55px;
+    padding: 0px;
+    font-size: 45pt;
+    font-family: 'Impact Regular';
+    letter-spacing: 5px;
+}
+#intro h3 {
+    margin: 0px 0px 0px 55px;
+    font-size: 15pt;
+    font-family: 'Segoe UI Regular';
+}
