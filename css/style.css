@@ -57,6 +57,7 @@ nav {
 }
 
 #navbar li a {
+    position: ;
     font-family: 'Segoe UI Regular';
     font-size: 20pt;
     padding: 8px;
@@ -98,15 +99,28 @@ nav {
     font-family: 'Impact Regular';
     letter-spacing: 10px;
 }
+
 #intro h2 {
-    margin: 80px 0px 0px 55px;
+    margin: 85px 0px 0px 55px;
     padding: 0px;
     font-size: 45pt;
     font-family: 'Impact Regular';
     letter-spacing: 5px;
 }
+
 #intro h3 {
     margin: 0px 0px 0px 55px;
     font-size: 15pt;
     font-family: 'Segoe UI Regular';
+}
+
+#span {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+    border-right: 600px solid #feb400;
+    border-top: 350px solid transparent;
+    border-bottom: 350px solid transparent;
 }
