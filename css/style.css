@@ -35,8 +35,9 @@ header {
 
 #logo {
     position: relative;
-    height: 70px;
-    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+    margin-left: 55px;
 }
 
     /*Nav bar*/
@@ -118,10 +119,19 @@ nav {
     font-family: 'Segoe UI Regular';
 }
 
+    /*Triangulo*/
+
 #init {
     position: absolute;
     transform: rotate(-90deg);
     top: -5px;
     right: -90px;
     filter: drop-shadow(-30px -10px 30px black);
+}
+
+    /*Instagram*/
+
+#insta {
+    position: relative;
+    width: 200px;
 }
