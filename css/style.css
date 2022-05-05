@@ -115,9 +115,9 @@ nav {
     text-shadow: -3px 5px 3px #000000;
 }
 
-#intro h3 {
+h3 {
     margin: 0px 0px 0px 55px;
-    font-size: 15pt;
+    font-size: 18pt;
     font-family: 'Segoe UI Regular';
 }
 
@@ -137,7 +137,7 @@ nav {
     position: relative;
     float: right;
     right: 200px;
-    top: 120px;
+    top: 160px;
     width: 200px;
     filter: drop-shadow(-5px 5px 5px black);
 }
@@ -147,15 +147,55 @@ nav {
 #button {
     position: relative;
     left: 200px;
-    width: 150px;
-    top: 120px;
+    width: 120px;
+    top: 110px;
     filter: drop-shadow(-15px 10px 15px black);
 }
 
     /*Sobre*/
 
 #sobre {
-    position: relative;
     height: 720px;
     width: 1520px;
+}
+
+#sobre h2 {
+    position: relative;
+    font-size: 45pt;
+    font-family: 'Impact Regular';
+    color: #feb400;
+    text-shadow: -3px 5px 3px #000000;
+    text-align: center;
+}
+
+    /* Skills */
+.skills {
+    width: 1240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+}
+
+.subt {
+    margin-left: 200px;
+}
+
+.skills div {
+    height: 130px;
+    width: 130px;
+    border: 10px solid #feb400;
+    margin: 0 30px 50px 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills h4 {
+    padding: 5px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Segoe UI Regular';
 }
