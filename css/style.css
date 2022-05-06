@@ -16,28 +16,32 @@ body {
     background-color: #121528;
     margin: 0;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
     /*Cabeçalho*/
 
 header {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 130px;
-    width: 1240px;
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: #121528;
+    filter: drop-shadow(0px 1px 5px black);
 }
 
     /*Logo*/
 
 #logo {
     position: relative;
-    height: 80px;
-    width: 80px;
-    margin-left: 55px;
+    height: 50px;
+    width: 50px;
+    margin-left: 12px;
     filter: drop-shadow( -10px 10px 15px black);
 }
 
@@ -62,9 +66,8 @@ nav {
 }
 
 #navbar li a {
-    position: ;
     font-family: 'Segoe UI Regular';
-    font-size: 20pt;
+    font-size: 18pt;
     padding: 8px;
     text-decoration: none;
     color: #fff;
@@ -72,7 +75,7 @@ nav {
 }
 
 #navbar li a:hover {
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: underline;
 }
 
@@ -80,8 +83,9 @@ nav {
 
 #inicio {
     position: relative;
-    height: 720px;
+    height: 100vh;
     width: 1520px;
+    top: -85px;
     background-image: url(../media/background.jpg);
     background-repeat: no-repeat;
     box-shadow: 0px 18px 30px #0000008d;
@@ -91,6 +95,7 @@ nav {
 
 #intro {
     width: 1240px;
+    top: 200px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -137,8 +142,8 @@ h3 {
     position: relative;
     float: right;
     right: 200px;
-    top: 160px;
-    width: 200px;
+    top: 310px;
+    height: 50px;
     filter: drop-shadow(-5px 5px 5px black);
 }
 
@@ -147,17 +152,22 @@ h3 {
 #button {
     position: relative;
     left: 200px;
-    width: 120px;
-    top: 110px;
+    height: 50px;
+    top: 310px;
     filter: drop-shadow(-15px 10px 15px black);
 }
 
     /*Sobre*/
 
 #sobre {
-    height: 720px;
+    height: 800px;
     width: 1520px;
 }
+
+#sobre1 {
+    width: 100vw;
+    height: 20px;
+}    
 
 #sobre h2 {
     position: relative;
@@ -169,6 +179,7 @@ h3 {
 }
 
     /* Skills */
+    
 .skills {
     width: 1240px;
     position: relative;
@@ -182,11 +193,9 @@ h3 {
 }
 
 .skills div {
-    height: 130px;
-    width: 130px;
-    border: 10px solid #feb400;
+    height: 120px;
+    width: 120px;
     margin: 0 30px 50px 30px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,3 +208,9 @@ h3 {
     font-size: 20px;
     font-family: 'Segoe UI Regular';
 }
+
+.circle {
+    position: absolute;
+    height: 160px;
+}
+
