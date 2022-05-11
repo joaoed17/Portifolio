@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #121528;
+    background-color: #0d1028;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
@@ -31,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-around;
     z-index: 1;
-    background-color: #121528;
+    background-color: #0d1028;
     filter: drop-shadow(0px 1px 5px black);
 }
 
