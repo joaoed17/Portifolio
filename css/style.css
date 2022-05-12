@@ -7,6 +7,12 @@
     font-family: 'Impact Regular';
     src: url('../fonts/Impact.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url(../fonts/Segoe\ UI\ Bold.woff) format('woff');
+}
+
 html {
     font-family: Arial, sans-serif;
     color: #fff;
@@ -18,6 +24,11 @@ body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
     /*Cabeçalho*/
@@ -84,7 +95,7 @@ nav {
 #inicio {
     position: relative;
     height: 100vh;
-    width: 1520px;
+    width: 100vw;
     top: -85px;
     background-image: url(../media/background.jpg);
     background-repeat: no-repeat;
@@ -160,7 +171,7 @@ h3 {
     /*Sobre*/
 
 #sobre {
-    height: 800px;
+    height: 750px;
     width: 1520px;
 }
 
@@ -176,6 +187,7 @@ h3 {
     color: #feb400;
     text-shadow: -3px 5px 3px #000000;
     text-align: center;
+    font-weight: normal;
 }
 
     /* Skills */
@@ -214,3 +226,217 @@ h3 {
     height: 160px;
 }
 
+    /* Portifólio */
+
+#servicos {
+    height: 750px;
+    width: 100vw;
+}
+
+#serv {
+    width: 100vw;
+    height: 20px;
+}
+
+#servicos h2 {
+    position: relative;
+    font-size: 45pt;
+    font-family: 'Impact Regular';
+    color: #feb400;
+    text-shadow: -3px 5px 3px #000000;
+    text-align: center;
+    font-weight: normal;
+}
+
+    /* Cards de Serviços */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #17192c;
+
+    width: 300px;
+    height: 400px;
+
+    border-radius: 50px;
+    box-shadow: -10px 10px 25px #000000b0;
+}
+
+.sec h3 {
+    color: #feb400;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Impact Regular';
+    font-weight: normal;
+    font-size: 25pt;
+}
+
+.psec {
+    width: 230px;
+}
+
+.sec p{
+    color: #fff;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI Bold';
+    font-size: 14pt;
+
+    text-align: justify;
+}
+
+.princ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #feb400;
+
+    width: 380px;
+    height: 480px;
+    
+    margin: 0 60px 0 60px;
+
+    border-radius: 50px;
+    box-shadow: -10px 10px 25px #000000b0;
+
+}
+
+.princ h3 {
+    color: #0d1028;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Impact Regular';
+    font-weight: normal;
+    font-size: 40pt;
+}
+
+#princ {
+    width: 300px;
+
+}
+
+.princ p {
+    color: #fff;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI Bold';
+    font-size: 20pt;
+
+    text-align: justify;
+}
+
+    /* Contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 650px;
+    width: 100vw;
+}
+
+#conta {
+    width: 100vw;
+    height: 20px;
+}
+
+#contato h2 {
+    position: relative;
+    font-size: 45pt;
+    font-family: 'Impact Regular';
+    color: #feb400;
+    text-shadow: -3px 5px 3px #000000;
+    text-align: center;
+    font-weight: normal;
+}
+
+#cont {
+    background-color: #feb400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 400px;
+}
+
+    /* Quadrados de contato */
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0d1028;
+    box-shadow: -10px 10px 25px #0000007d;
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+
+    margin: 0 40px 0 40px;
+    padding: 0;
+}
+
+.square h3 {
+    color: #feb400;
+
+    margin: 0 0 60px 0;
+    padding: 0;
+
+    text-align: center;
+
+    font-family: 'Segoe UI Bold';
+    font-size: 20pt;
+    
+}
+
+.square h4 {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    font-family: 'Segoe UI Regular';
+    font-size: 15pt;
+}
+
+.icons {    
+    margin: 0;
+    padding: 0;
+}
+
+#copy {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+#git {
+    margin: 0 25px 0 25px;
+}
