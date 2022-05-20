@@ -40,7 +40,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 1;
     background-color: #0d1028;
     filter: drop-shadow(0px 1px 5px black);
@@ -52,11 +52,17 @@ header {
     position: relative;
     height: 50px;
     width: 50px;
-    margin-left: 12px;
-    filter: drop-shadow( -10px 10px 15px black);
+    margin-left: 200px;
+    filter: drop-shadow( -5px 5px 5px black);
+
+    transition: 1s;
 }
 
     /*Nav bar*/
+
+#btn-mobile {
+    display: none;
+}
 
 nav {
     position: relative;
@@ -110,6 +116,8 @@ nav {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+
+    transition: 1s;
 }
 
 #intro h1 {
@@ -120,6 +128,8 @@ nav {
     text-shadow: -5px 5px 5px #000000;
     font-family: 'Impact Regular';
     letter-spacing: 10px;
+
+    transition: 1s;
 }
 
 #intro h2 {
@@ -129,12 +139,16 @@ nav {
     font-family: 'Impact Regular';
     letter-spacing: 5px;
     text-shadow: -3px 5px 3px #000000;
+
+    transition: 1s;
 }
 
 h3 {
     margin: 0px 0px 0px 55px;
     font-size: 18pt;
     font-family: 'Segoe UI Regular';
+
+    transition: 1s;
 }
 
     /*Triangulo*/
@@ -145,34 +159,28 @@ h3 {
     top: -5px;
     right: -90px;
     filter: drop-shadow(-30px -10px 30px black);
-}
-
-    /*Instagram*/
-
-#insta {
-    position: relative;
-    float: right;
-    right: 200px;
-    top: 310px;
-    height: 50px;
-    filter: drop-shadow(-5px 5px 5px black);
+    transition: 1s;
 }
 
     /*Contrate*/
 
 #button {
     position: relative;
-    left: 200px;
+    
     height: 50px;
-    top: 310px;
+    top: 110px;
+    left: 50px;
+
     filter: drop-shadow(-15px 10px 15px black);
+
+    transition: 1s;
 }
 
     /*Sobre*/
 
 #sobre {
-    height: 750px;
-    width: 1520px;
+    height: 650px;
+    width: 100vw;
 }
 
 #sobre1 {
@@ -198,20 +206,31 @@ h3 {
     display: flex;
     justify-content: center;
     margin: 50px auto 0 auto;
+
+    transition: 1s;
 }
 
-.subt {
-    margin-left: 200px;
+#skill {
+    width: 1240px;
+
+    margin: 0 auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+            transition: 1s;
 }
 
 .skills div {
-    height: 120px;
-    width: 120px;
-    margin: 0 30px 50px 30px;
+    height: 160px;
+    width: 160px;
+    margin: 0 10px 50px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    transition: 1s;
 }
 
 .skills h4 {
@@ -224,12 +243,14 @@ h3 {
 .circle {
     position: absolute;
     height: 160px;
+
+    transition: 1s;
 }
 
     /* Portifólio */
 
 #servicos {
-    height: 750px;
+    height: 650px;
     width: 100vw;
 }
 
@@ -269,6 +290,8 @@ h3 {
 
     border-radius: 50px;
     box-shadow: -10px 10px 25px #000000b0;
+
+    transition: 1s;
 }
 
 .sec h3 {
@@ -286,6 +309,8 @@ h3 {
 
 .psec {
     width: 230px;
+
+    transition: 1s;
 }
 
 .sec p{
@@ -298,6 +323,7 @@ h3 {
     font-size: 14pt;
 
     text-align: justify;
+
 }
 
 .princ {
@@ -316,6 +342,7 @@ h3 {
     border-radius: 50px;
     box-shadow: -10px 10px 25px #000000b0;
 
+    transition: 1s;
 }
 
 .princ h3 {
@@ -332,6 +359,7 @@ h3 {
 #princ {
     width: 300px;
 
+    transition: 1s;
 }
 
 .princ p {
@@ -383,6 +411,10 @@ h3 {
     height: 400px;
 }
 
+.icont {
+    transition: 1s;
+}
+
     /* Quadrados de contato */
 
 .square {
@@ -400,6 +432,8 @@ h3 {
 
     margin: 0 40px 0 40px;
     padding: 0;
+
+    transition: 1s;
 }
 
 .square h3 {
@@ -439,4 +473,321 @@ h3 {
 
 #git {
     margin: 0 25px 0 25px;
+}
+
+@media (max-width: 1240px) {
+    #logo {
+        margin-left: 55px;
+
+        transition: 1s;
+    }
+
+    #init {
+        right: -150px;
+
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    /* Inicio */
+
+    #init {
+        opacity: 0;
+
+        transition: 0.5s;
+    }
+
+    #intro {
+        top: 140px;
+
+        transition: 1s;
+    }
+
+    #intro h1 {
+        font-size: 90pt;
+
+        margin: -50px 0px 25px 55px;
+        transition: 1s;
+    }
+    
+    #intro h2 {
+        font-size: 65pt;
+
+        transition: 1s;
+    }
+    
+    h3 {
+        font-size: 25pt;
+
+        transition: 1s;
+    }
+
+    #button {
+        height: 60px;
+        top: 90px;
+
+        transition: 1s;
+    }
+    
+    /* Skills */
+        
+    .skills {
+        width: 900px;
+
+        transition: 1s;
+    }
+    
+    #skill {
+        width: 900px;
+
+        transition: 1s;
+    }
+    
+    .skills div {
+        height: 140px;
+        width: 140px;
+
+        transition: 1s;
+    }
+    
+    .circle {
+        height: 150px;
+
+        transition: 1s;
+    }
+    
+    /* Cards */
+    
+    .sec {  
+        width: 250px;
+        height: 350px;
+
+        transition: 1s;
+    }
+
+    .psec {
+        width: 200px;
+    }
+
+    .princ {
+        width: 330px;
+        height: 430px;
+        
+        margin: 0 15px 0 15px;
+    
+        transition: 1s;
+    }
+    
+    
+    #princ {
+        width: 250px;
+
+        transition: 1s;
+    }
+
+    .princ p {
+        font-size: 18pt;
+        
+        transition: 1s;
+    }
+    
+    /* Contato */
+    
+    #cont {
+        height: 350px;
+    }
+
+    #contato h3 {
+        font-size: 18pt;
+    }
+    
+    .icont {
+        height: 70px;
+
+        transition: 1s;
+    }
+
+        /* Quadrados de contato */
+    
+    .square {
+        height: 270px;
+        width: 270px;
+
+        margin: 0 10px 0 10px;
+
+        transition: 1s;
+    }
+    
+    .square h3 {
+        font-size: 18pt;
+        
+    }
+    
+    .square h4 {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    /* Inicio */
+
+    #intro h1 {
+        font-size: 70pt;
+
+        margin: -40px 0px 25px 55px;
+
+        transition: 1s;
+    }
+    
+    #intro h2 {
+        font-size: 45pt;
+
+        transition: 1s;
+    }
+    
+    h3 {
+        font-size: 18pt;
+
+        transition: 1s;
+    }
+
+    #button {
+        height: 50px;
+        top: 110px;
+
+        transition: 1s;
+    }
+
+     /* Skills */
+
+    #sobre {
+        height: 900px;
+        width: 100vw;
+    }
+        
+    .skills {
+        width: 700px;
+
+        flex-wrap: wrap;
+
+        transition: 1s;
+    }
+    
+    #skill {
+        width: 700px;
+
+        transition: 1s;
+    }
+
+    /* Serviços */
+
+    #servicos {
+        height: 1500px;
+
+        transition: 1s;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .princ {
+        margin: 40px 0;
+
+        width: 380px;
+        height: 450px;
+    }
+
+    .princ p {
+        font-size: 21pt;
+    }
+
+    #princ {
+        width: 350px;
+    
+        transition: 1s;
+    }
+
+    .sec {  
+        width: 340px;
+        height: 420px;
+    
+
+        transition: 1s;
+    }
+
+    .sec p{
+        font-size: 16pt;
+        
+        transition: 1s;
+    }
+
+    .psec {
+        width: 290px;
+    
+        transition: 1s;
+    }
+
+    .sec h3 {
+        font-size: 29pt;
+
+        transition: 1s;
+    }
+    .princ h3 {
+        font-size: 44pt;
+    }
+
+    /* Contato */
+
+    #cont {
+        height: 310px;
+    }
+
+    #contato h3 {
+        font-size: 15pt;
+        
+        transition: 1s;
+    }
+    
+    .icont {
+        height: 50px;
+
+        transition: 1s;
+    }
+
+        /* Quadrados de contato */
+    
+    .square {
+        height: 200px;
+        width: 205px;
+
+        margin: 0 10px 0 10px;
+
+        transition: 1s;
+    }
+    
+    .square h3 {
+        font-size: 18pt;
+
+        margin: 0 0 40px 0;
+        
+        transition: 1s;
+    }
+    
+    .square h4 {
+        font-size: 12pt; 
+
+        transition: 1s;
+    }
+
+    #email {
+        word-break: break-all;
+        
+        transition: 1s;
+    }
+
+    /* Toggle Menu */
 }
