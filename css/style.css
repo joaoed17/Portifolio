@@ -38,9 +38,6 @@ header {
     top: 0px;
     height: 70px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 1;
     background-color: #0d1028;
     filter: drop-shadow(0px 1px 5px black);
@@ -66,7 +63,10 @@ header {
 
 nav {
     position: relative;
-    margin-right: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #navbar {
@@ -79,7 +79,7 @@ nav {
 }
 
 #navbar li {
-    padding-right: 23px;
+    margin: 12px;
 }
 
 #navbar li a {
@@ -475,6 +475,23 @@ h3 {
     margin: 0 25px 0 25px;
 }
 
+    /* Menu Hamburguer */
+
+#hamburguer {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 20px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 1240px) {
     #logo {
         margin-left: 55px;
@@ -790,4 +807,44 @@ h3 {
     }
 
     /* Toggle Menu */
+
+    #hamburguer {
+        display: block;
+    }
+
+    #hamburguer:hover {
+        cursor: pointer;
+    }
+
+    #hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    #navbar {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: #0d1028;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+    }
+
+    #navbar li {
+        margin: 16px 0;
+    }
+
+    #navbar.active {
+        left: 0;
+    }
 }
