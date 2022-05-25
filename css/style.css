@@ -57,10 +57,6 @@ header {
 
     /*Nav bar*/
 
-#btn-mobile {
-    display: none;
-}
-
 nav {
     position: relative;
     height: 70px;
@@ -846,5 +842,110 @@ h3 {
 
     #navbar.active {
         left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #intro h1 {
+        margin: -30px 0px 35px 30px;
+        font-size: 47pt;
+        transition: 1s;
+    }
+    
+    #intro h2 {
+        margin-left: 30px;
+        font-size: 37pt;
+    
+        transition: 1s;
+    }
+    
+    h3 {
+        margin-left: 30px;
+        font-size: 14pt;
+
+        transition: 1s;
+    }
+
+    #button {
+        top: 150px;
+        left: 30px;
+
+        transition: 1s;
+    }
+
+        /* Skills */
+
+    #sobre {
+        height: 1050px;
+        width: 100vw;
+    }
+        
+    .skills {
+        width: 500px;
+
+        flex-wrap: wrap;
+
+        transition: 1s;
+    }
+    
+    #skill {
+        width: 500px;
+
+        transition: 1s;
+    }
+
+        /* Contato */
+
+    #cont {
+        height: 250px;
+    }
+
+    #contato h3 {
+        font-size: 12pt;
+        
+        transition: 1s;
+    }
+    
+    .icont {
+        margin: 5px 0;
+        height: 60px;
+
+        transition: 1s;
+    }
+
+        /* Quadrados de contato */
+    
+    .square {
+        height: 150px;
+        width: 150px;
+
+        border-radius: 25px;
+
+        margin: 0 4px;
+        transition: 1s;
+    }
+    
+    .square h3 {
+        margin: 0 0 15px 0;
+        
+        transition: 1s;
+    }
+    
+    .square h4 {
+        display: none;
+
+        transition: 1s;
+    }
+
+    .foot {
+        height: 40px;
+
+        transition: 1s;
+    }
+    
+    #git {
+        margin: 0 5px;
+
+        transition: 1s;
     }
 }
