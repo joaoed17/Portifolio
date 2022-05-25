@@ -23,7 +23,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    margin: 0;
 }
 
 a {
@@ -37,7 +36,7 @@ header {
     position: fixed;
     top: 0px;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     background-color: #0d1028;
     filter: drop-shadow(0px 1px 5px black);
@@ -52,7 +51,7 @@ header {
     margin-left: 200px;
     filter: drop-shadow( -5px 5px 5px black);
 
-    transition: 1s;
+    transition: .2s;
 }
 
     /*Nav bar*/
@@ -113,7 +112,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 #intro h1 {
@@ -125,7 +124,7 @@ nav {
     font-family: 'Impact Regular';
     letter-spacing: 10px;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 #intro h2 {
@@ -136,7 +135,7 @@ nav {
     letter-spacing: 5px;
     text-shadow: -3px 5px 3px #000000;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 h3 {
@@ -144,7 +143,7 @@ h3 {
     font-size: 18pt;
     font-family: 'Segoe UI Regular';
 
-    transition: 1s;
+    transition: .2s;
 }
 
     /*Triangulo*/
@@ -155,7 +154,7 @@ h3 {
     top: -5px;
     right: -90px;
     filter: drop-shadow(-30px -10px 30px black);
-    transition: 1s;
+    transition: .2s;
 }
 
     /*Contrate*/
@@ -169,7 +168,7 @@ h3 {
 
     filter: drop-shadow(-15px 10px 15px black);
 
-    transition: 1s;
+    transition: .2s;
 }
 
     /*Sobre*/
@@ -203,7 +202,7 @@ h3 {
     justify-content: center;
     margin: 50px auto 0 auto;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 #skill {
@@ -214,7 +213,7 @@ h3 {
     display: flex;
     flex-direction: column;
 
-            transition: 1s;
+            transition: .2s;
 }
 
 .skills div {
@@ -226,7 +225,7 @@ h3 {
     align-items: center;
     flex-direction: column;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .skills h4 {
@@ -240,7 +239,7 @@ h3 {
     position: absolute;
     height: 160px;
 
-    transition: 1s;
+    transition: .2s;
 }
 
     /* Portifólio */
@@ -287,7 +286,7 @@ h3 {
     border-radius: 50px;
     box-shadow: -10px 10px 25px #000000b0;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .sec h3 {
@@ -306,7 +305,7 @@ h3 {
 .psec {
     width: 230px;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .sec p{
@@ -338,7 +337,7 @@ h3 {
     border-radius: 50px;
     box-shadow: -10px 10px 25px #000000b0;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .princ h3 {
@@ -355,7 +354,7 @@ h3 {
 #princ {
     width: 300px;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .princ p {
@@ -408,7 +407,7 @@ h3 {
 }
 
 .icont {
-    transition: 1s;
+    transition: .2s;
 }
 
     /* Quadrados de contato */
@@ -429,7 +428,7 @@ h3 {
     margin: 0 40px 0 40px;
     padding: 0;
 
-    transition: 1s;
+    transition: .2s;
 }
 
 .square h3 {
@@ -489,16 +488,21 @@ h3 {
 }
 
 @media (max-width: 1240px) {
+
+    #intro {
+        width: 100vw
+    }
+
     #logo {
         margin-left: 55px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #init {
         right: -150px;
 
-        transition: 1s;
+        transition: .2s;
     }
 }
 
@@ -507,41 +511,39 @@ h3 {
     /* Inicio */
 
     #init {
-        opacity: 0;
-
-        transition: 0.5s;
+        display: none;
     }
 
     #intro {
         top: 140px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #intro h1 {
         font-size: 90pt;
 
         margin: -50px 0px 25px 55px;
-        transition: 1s;
+        transition: .2s;
     }
     
     #intro h2 {
         font-size: 65pt;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     h3 {
         font-size: 25pt;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #button {
         height: 60px;
         top: 90px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     /* Skills */
@@ -549,26 +551,26 @@ h3 {
     .skills {
         width: 900px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     #skill {
         width: 900px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     .skills div {
         height: 140px;
         width: 140px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     .circle {
         height: 150px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     /* Cards */
@@ -577,7 +579,7 @@ h3 {
         width: 250px;
         height: 350px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     .psec {
@@ -590,20 +592,20 @@ h3 {
         
         margin: 0 15px 0 15px;
     
-        transition: 1s;
+        transition: .2s;
     }
     
     
     #princ {
         width: 250px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     .princ p {
         font-size: 18pt;
         
-        transition: 1s;
+        transition: .2s;
     }
     
     /* Contato */
@@ -619,7 +621,7 @@ h3 {
     .icont {
         height: 70px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
         /* Quadrados de contato */
@@ -630,7 +632,7 @@ h3 {
 
         margin: 0 10px 0 10px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     .square h3 {
@@ -652,26 +654,26 @@ h3 {
 
         margin: -40px 0px 25px 55px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     #intro h2 {
         font-size: 45pt;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     h3 {
         font-size: 18pt;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #button {
         height: 50px;
         top: 110px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
      /* Skills */
@@ -686,13 +688,13 @@ h3 {
 
         flex-wrap: wrap;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     #skill {
         width: 700px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     /* Serviços */
@@ -700,7 +702,7 @@ h3 {
     #servicos {
         height: 1500px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     .cards {
@@ -721,7 +723,7 @@ h3 {
     #princ {
         width: 350px;
     
-        transition: 1s;
+        transition: .2s;
     }
 
     .sec {  
@@ -729,25 +731,25 @@ h3 {
         height: 420px;
     
 
-        transition: 1s;
+        transition: .2s;
     }
 
     .sec p{
         font-size: 16pt;
         
-        transition: 1s;
+        transition: .2s;
     }
 
     .psec {
         width: 290px;
     
-        transition: 1s;
+        transition: .2s;
     }
 
     .sec h3 {
         font-size: 29pt;
 
-        transition: 1s;
+        transition: .2s;
     }
     .princ h3 {
         font-size: 44pt;
@@ -762,13 +764,13 @@ h3 {
     #contato h3 {
         font-size: 15pt;
         
-        transition: 1s;
+        transition: .2s;
     }
     
     .icont {
         height: 50px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
         /* Quadrados de contato */
@@ -779,7 +781,7 @@ h3 {
 
         margin: 0 10px 0 10px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     .square h3 {
@@ -787,19 +789,19 @@ h3 {
 
         margin: 0 0 40px 0;
         
-        transition: 1s;
+        transition: .2s;
     }
     
     .square h4 {
         font-size: 12pt; 
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #email {
         word-break: break-all;
         
-        transition: 1s;
+        transition: .2s;
     }
 
     /* Toggle Menu */
@@ -846,31 +848,35 @@ h3 {
 }
 
 @media (max-width: 700px) {
+    #logo {
+        margin-left: 30px;
+    }
+
     #intro h1 {
         margin: -30px 0px 35px 30px;
         font-size: 47pt;
-        transition: 1s;
+        transition: .2s;
     }
     
     #intro h2 {
         margin-left: 30px;
         font-size: 37pt;
     
-        transition: 1s;
+        transition: .2s;
     }
     
     h3 {
         margin-left: 30px;
         font-size: 14pt;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     #button {
         top: 150px;
         left: 30px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
         /* Skills */
@@ -885,13 +891,13 @@ h3 {
 
         flex-wrap: wrap;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     #skill {
         width: 500px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
         /* Contato */
@@ -901,16 +907,16 @@ h3 {
     }
 
     #contato h3 {
-        font-size: 12pt;
+        font-size: 15pt;
         
-        transition: 1s;
+        transition: .2s;
     }
     
     .icont {
         margin: 5px 0;
         height: 60px;
 
-        transition: 1s;
+        transition: .2s;
     }
 
         /* Quadrados de contato */
@@ -922,30 +928,151 @@ h3 {
         border-radius: 25px;
 
         margin: 0 4px;
-        transition: 1s;
+        transition: .2s;
     }
     
     .square h3 {
         margin: 0 0 15px 0;
         
-        transition: 1s;
+        transition: .2s;
     }
     
     .square h4 {
         display: none;
 
-        transition: 1s;
+        transition: .2s;
     }
 
     .foot {
         height: 40px;
 
-        transition: 1s;
+        transition: .2s;
     }
     
     #git {
         margin: 0 5px;
 
-        transition: 1s;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #intro h1 {
+        margin: -15px 0px 55px 30px;
+        font-size: 39pt;
+        letter-spacing: 3px;
+
+        transition: .2s;
+    }
+    
+    #intro h2 {
+        font-size: 27pt;
+        letter-spacing: 3px;
+
+        transition: .2s;
+    }
+    
+    h3 {
+        font-size: 14pt;
+
+        transition: .2s;
+    }
+
+    #button {
+        top: 160px;
+
+        transition: .2s;
+    }
+
+        /* Skills */
+
+    #sobre h2 {
+        font-size: 35pt;
+    }
+        
+    #sobre {
+        height: 1250px;
+    }
+        
+    .skills {
+        width: 350px;
+
+        transition: .2s;
+    }
+    
+    #skill {
+        width: 350px;
+
+        transition: .2s;
+    }
+
+    /* Serviços */
+
+    #servicos h2 {
+        font-size: 35pt;
+    }
+
+    #servicos {
+        height: 1500px;
+
+        transition: .2s;
+    }
+
+    .princ {
+        width: 330px;
+        height: 430px;
+
+        transition: .2s;
+    }
+
+    .princ p {
+        font-size: 18pt;
+    }
+
+    #princ {
+        width: 300px;
+    
+        transition: .2s;
+    }
+
+    .sec {  
+        width: 300px;
+        height: 400px;
+    
+        transition: .2s;
+    }
+
+    .sec p{
+        font-size: 15pt;
+        
+        transition: .2s;
+    }
+
+    .psec {
+        width: 270px;
+    
+        transition: .2s;
+    }
+
+    .sec h3 {
+        font-size: 25pt;
+
+        transition: .2s;
+    }
+
+    .princ h3 {
+        font-size: 35pt;
+    }
+
+            /* Contato */
+
+    #contato h2 {
+        font-size: 35pt;
+    }
+
+    #cont {
+        flex-wrap: wrap;
+        height: 360px;
     }
 }
