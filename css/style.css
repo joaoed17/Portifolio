@@ -151,7 +151,6 @@ h3 {
     /*Triangulo*/
 
 #init {
-position:;
     position: absolute;
     transform: rotate(-90deg);
     top: -5px;
@@ -493,6 +492,97 @@ position:;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+    /* Album */
+
+#albumdesign {
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    z-index: 100;
+    display: none;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.954);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+
+    border-radius: 10px;
+    border: 3px solid #fff;
+
+}
+
+.popup span {
+    position: absolute;
+
+    top: 5px;
+    right: 20px;
+    padding: 5px;
+
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+
+    z-index: 100;
+    cursor: pointer;
+}
+
+.popup input {
+    display: none;
+}
+
+#buttons {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+    bottom: 15px;
+    width: 100%;
+
+}
+
+#buttonR {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #3d3c3c7d;
+}
+
+#buttonR:hover {
+    background-color: #1b1b1be7;
+}
+
+#buttonL {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #3d3c3c7d;
+}
+
+#buttonL:hover {
+    background-color: #1b1b1be7;
+}
+
 
 @media (max-width: 1240px) {
 
@@ -944,6 +1034,12 @@ position:;
 
         transition: .2s;
     }
+
+    /* Galeria */
+
+    .popup img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1064,3 +1160,4 @@ position:;
         height: 360px;
     }
 }
+
