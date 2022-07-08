@@ -348,6 +348,8 @@ h3 {
 .princ h3 {
     color: #0d1028;
 
+    text-align: center;
+
     margin: 0;
     padding: 0;
 
@@ -493,13 +495,13 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
-    /* Album */
+    /* Album design */
 
 #albumdesign {
     cursor: pointer;
 }
 
-.popup {
+.popupdes {
     position: fixed;
     z-index: 100;
     display: none;
@@ -519,7 +521,7 @@ h3 {
     user-select: none;
 }
 
-.popup img {
+.popupdes img {
     position: absolute;
 
     top: 50%;
@@ -532,7 +534,7 @@ h3 {
 
 }
 
-.popup span {
+.popupdes span {
     position: absolute;
 
     top: 5px;
@@ -545,10 +547,6 @@ h3 {
 
     z-index: 100;
     cursor: pointer;
-}
-
-.popup input {
-    display: none;
 }
 
 #buttons {
@@ -1037,7 +1035,7 @@ h3 {
 
     /* Galeria */
 
-    .popup img {
+    .popupdes img {
         width: 80%;
     }
 }

@@ -13,33 +13,37 @@ document.querySelectorAll(".links").forEach(n => n.addEventListener("click", () 
     navBar.classList.remove("active")
 }));
 
-//popup
+
+//popup designer
+
 
 const albumDesign = document.querySelector("#albumdesign");
-const popup = document.querySelector(".popup");
-const fechar = document.querySelector("#fechar")
-const body = document.querySelector("body")
+const popupDes = document.querySelector(".popupdes");
+const fecharDes = document.querySelector(".popupdes span");
+const body = document.querySelector("body");
 
-function show () {
-    popup.style.display = "flex"
+function showDes () {
+    popupDes.style.display = "flex"
     body.style.overflowY = "hidden"
-}
+};
 
-function hide () {
-    popup.style.display = "none"
+function hideDes () {
+    popupDes.style.display = "none"
     body.style.overflowY = "visible"
-}
+};
 
-fechar.addEventListener("click", hide)
-albumDesign.addEventListener("click", show)
+fecharDes.addEventListener("click", hideDes);
+albumDesign.addEventListener("click", showDes);
 
-//trocar foto
 
-const chevR = document.querySelector("#buttonR")
-const chevL = document.querySelector("#buttonL")
-let img = document.querySelector(".popup img")
-let cont = 1
-let autoCont = setInterval(next, 4000)
+//trocar foto designer
+
+
+const chevR = document.querySelector("#buttonR");
+const chevL = document.querySelector("#buttonL");
+let img = document.querySelector(".popupdes img");
+let cont = 1;
+let autoCont = setInterval(next, 3000);
 
 function next () {
 
@@ -51,8 +55,8 @@ function next () {
         img.setAttribute("src", `media/foto${cont}.jpg`)
     }
     clearInterval(autoCont)
-    autoCont = setInterval(next, 4000)
-}
+    autoCont = setInterval(next, 3000)
+};
 
 function prev () {
 
@@ -64,11 +68,8 @@ function prev () {
         img.setAttribute("src", `media/foto${cont}.jpg`)
     }
     clearInterval(autoCont)
-    autoCont = setInterval(next, 4000)
-}
+    autoCont = setInterval(next, 3000)
+};
 
-
-
-
-chevR.addEventListener("click", next)
-chevL.addEventListener("click", prev)
+chevR.addEventListener("click", next);
+chevL.addEventListener("click", prev);
