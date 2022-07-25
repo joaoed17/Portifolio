@@ -47,7 +47,7 @@ let autoCont = setInterval(next, 3000);
 
 function next () {
 
-    if(cont >= 15) {
+    if(cont >= 18) {
         cont = 1
         img.setAttribute("src", `media/foto${cont}.jpg`)
     }else {
@@ -61,7 +61,7 @@ function next () {
 function prev () {
 
     if(cont <= 1) {
-        cont = 15
+        cont = 18
         img.setAttribute("src", `media/foto${cont}.jpg`)
     }else { 
         cont--
