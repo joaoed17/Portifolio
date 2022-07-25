@@ -281,7 +281,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 45px;
 
     background-color: #17192c;
 
@@ -299,12 +299,13 @@ h3 {
 
     text-align: center;
 
-    margin: 0;
+    
+    margin: 30px 0 0 0 ;
     padding: 0;
 
     font-family: 'Impact Regular';
     font-weight: normal;
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 .psec {
@@ -376,6 +377,21 @@ h3 {
     text-align: justify;
 }
 
+#botaodesigner {
+    border-radius: 50px;   
+
+    width: 320px;
+    height: 80px;
+
+    background: #0d1028;
+}
+
+#botaodesigner h3 {
+    font-size: 30pt;
+    margin: 7px;
+    
+    color: #feb400;
+}
     /* Contato */
 
 #contato {
